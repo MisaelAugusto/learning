@@ -23,7 +23,7 @@ class Searcher
         $html = $response->getBody();
 
 
-        
+
         $this->crawler->addHtmlContent($html);
 
         $coursesElements = $this->crawler->filter(
@@ -33,7 +33,8 @@ class Searcher
         $courses = array_map(
             function ($item) {
                 return $item->textContent;
-            }, $coursesElements->getArrayCopy()
+            },
+            $coursesElements->getArrayCopy()
         );
 
         return join(PHP_EOL, $courses);
