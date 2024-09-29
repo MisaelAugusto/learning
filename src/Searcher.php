@@ -22,6 +22,8 @@ class Searcher
 
         $html = $response->getBody();
 
+
+        
         $this->crawler->addHtmlContent($html);
 
         $coursesElements = $this->crawler->filter(
