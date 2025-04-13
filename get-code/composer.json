@@ -1,0 +1,28 @@
+{
+    "name": "misael-augusto/get-code",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "MisaelAugusto\\GetCode\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MisaelAugusto",
+            "email": "misael.costa@ccc.ufcg.edu.br"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1",
+        "knplabs/github-api": "^3.0",
+        "http-interop/http-factory-guzzle": "^1.0"
+    },
+    "bin": [
+        "./get-code.php"
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
